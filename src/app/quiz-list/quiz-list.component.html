@@ -1,0 +1,5 @@
+@for (quiz of quizzes; track quiz) {
+  <mat-card (click)="selectQuiz(quiz)">
+    <app-quiz-select [quiz]="quiz"></app-quiz-select>
+  </mat-card>
+}

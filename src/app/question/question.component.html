@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-header>
+    {{question.question}}
+  </mat-card-header>
+  <mat-card-content>
+    @for (answer of question.answers; track answer) {
+      {{answer}}
+    }
+  </mat-card-content>
+</mat-card>
